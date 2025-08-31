@@ -23,9 +23,5 @@ class Config:
     @property
     def is_production(self) -> bool:
         return self.ENVIRONMENT == "production"
-    
-    @property
-    def is_development(self) -> bool:
-        return self.ENVIRONMENT == "development"
 
 config = Config()

@@ -45,3 +45,4 @@ class ScoreCalculationRequest(BaseModel):
 
 class PriceUpdateRequest(BaseModel):
     hours_back: int = Field(default=24, ge=1, le=168, description="Hours to look back for active tokens")
+    min_trades: int = Field(default=3, ge=1, le=100, description="Minimum trades for price update")

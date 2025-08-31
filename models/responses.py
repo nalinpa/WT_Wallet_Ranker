@@ -20,7 +20,6 @@ class ScoreCalculationResponse(BaseResponse):
     score_adjustments: int = Field(..., description="Number of score adjustments calculated")
     wallet_updates: int = Field(..., description="Number of wallet updates generated")
     recommendations_generated: int = Field(..., description="Number of recommendations created")
-    summary: List[Dict[str, Any]] = Field(..., description="Summary of recommendations by priority")
 
 class RecommendationItem(BaseModel):
     wallet_address: str
